@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    background-image: url('../photo2/contact_bgimage.jpg'); 
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth; 
+}
+section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(194, 20, 20);
+  }
+/* .sticky-section {
+    top: 0;
+    height: 80vh;
+  } */
