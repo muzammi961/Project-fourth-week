@@ -26,7 +26,7 @@ def registration(request):
         except Exception as e:
             print('you got a erorr register')
             return redirect('registration')
-    return render(request, 'html_/registration.html')
+    return render(request, 'html_/index.html')
  
 def login_page(request):
     if request.method=='POST':
