@@ -11,12 +11,24 @@ Contact
     *{
         margin: 0;
         scroll-behavior: smooth; 
-        overflow: hidden;
+     
     }
 </style>
 <link rel="stylesheet" href="{% static '/css2/contact_side_css.css'%}">
 <div class="col-md-12 row">
-<section id="contact_main1" class="col-md-6">Welcome to Home Page</section>
-<section id="contact_main2" class="col-md-6">Welcome to Home Page5678</section>
+<section id="contact_main1" class="col-md-6"><img id="contact_main1_img" class="rounded-circle " src="{% static 'photo2/contact_left_imag.jpg' %}" alt="it is not"></section>
+<section id="contact_main2" class="col-md-6"><form method="post" class="rounded p-4 shadow" enctype="multipart/form-data">
+    
+    <h1 class="text-center mb-4 text-light  " id="main_sign">Contact</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+    <div class="mb-4"><input class="form-control" style="text-transform: uppercase;" id="name" type="text" name="name_registr" placeholder="Enter your name"></div>
+    <div class="mb-4"><input class="form-control" id="phone_number" type="text" name="phone_number_contact" placeholder="Enter your number"></div>
+   <div class="mb-5"><input class="form-control" id="text_contact_" type="text" name="text_contact" placeholder="Enter something"></div>
+   <button class="btn btn-primary" id="submit" type="submit">Contact</button>
+   </form>
+    <div class="d-flex justify-content-between">
+     <p class="" id="text_contact_">hiiiiii</p>
+      </section>
 </div>
 {% endblock %}

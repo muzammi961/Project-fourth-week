@@ -1,0 +1,33 @@
+/* section {
+  height: auto;
+  display: flex;
+  justify-content: center; */
+  
+  /* align-items: center;
+  font-size: 2rem;
+  color: rgb(194, 20, 20);
+} */
+/* .sticky-section {
+  top: 0;
+  height: 100vh;
+} */
+
+
+#list-item-2{ 
+
+   margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('../photo2/menu_bg_photo.jpg');
+}
+
+#list-item-3,#list-item-4,#list-item-5{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('../photo2/menu_bg_photo.jpg'); 
+}

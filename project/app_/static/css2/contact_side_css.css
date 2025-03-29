@@ -9,13 +9,21 @@ body{
     background-attachment: fixed;
     scroll-behavior: smooth; 
 }
-section {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: rgb(194, 20, 20);
+#text_contact_{
+  height:20vh ;
+  }
+#contact_main1{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  #contact_main1_img {
+    margin: 0;
+    height: 50vh;
+   
+    border-radius: 20px;
   }
 /* .sticky-section {
     top: 0;

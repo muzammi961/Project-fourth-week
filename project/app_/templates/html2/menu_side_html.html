@@ -1,0 +1,91 @@
+{% extends 'html2/base.html' %}
+{% load static %}
+
+{% block title %}
+Menu
+{% endblock %}
+
+{% block comment %}
+ <style>
+    *{
+     
+        margin: 0;
+        scroll-behavior: smooth; 
+    }
+    section {
+    
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+  
+      align-items: center;
+      font-size: 2rem;
+      color: rgb(194, 20, 20);
+    }
+    .sticky-section {
+      top: 0;
+      height: 100vh;
+    }
+    body{ 
+
+       margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-image: url('../photo2/menu_top_imag.jpg');
+    }
+    
+    
+</style>
+<link rel="stylesheet" href="{% static 'css2/menu_side_css.css' %}">
+
+
+<section id="list-item-1" class="sticky-section">
+
+    <div class="col-md-6  ">
+        <h1 class="justify-content-center d-flex" style="color: aliceblue; font-family:sans-serif;font-size:7vh;">EATING WELL <br> NEVER TASTED SO GOOD</h1>
+        <div class="justify-content-center d-flex"> <button class=" p-2 rounded btn btn-outline-light" type="submit">ORDER NOW</button></div>
+      
+    </div>
+    <div class="col-md-6">hjjhjj   </div>
+
+
+</section>
+
+<h1 class="d-flex justify-content-center text-light " style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">VEG - SOUP</h1>
+<section id="list-item-2"   class="sticky-section" >
+  <div class="container ">
+    <div class="row gy-4">
+      {% for i in menu_all_things %}
+       <div class="col-md-3  ">
+        <div class="card">
+          {% if i.item_photo %}
+          <img style="height: 220px;"  src="{{ i.item_photo.url }}" alt="{{ item.item_name }}">
+          {% else %}
+          <p class="text-center">No photo available</p>
+          {% endif %}
+          <h5 class="card-title p-2">{{ i.item_name }}</h5>
+          <div class="card-body  flex-row d-flex">
+            
+            <a  class="btn btn-primary me-2 ">${{ i.price}}</a>
+            <a href="" class="btn btn-primary ">Offer ${{ i.offer_price }}</a>
+          </div>
+        </div>
+       </div>
+
+  
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<h1 class="d-flex justify-content-center text-light " style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">VEG - SOUP</h1>
+<section id="list-item-3" class="sticky-section">   
+  
+</section>
+<h1 class="d-flex justify-content-center text-light " style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">VEG - SOUP</h1> 
+<section id="list-item-4" class="sticky-section">Our Services Section</section>
+<section id="list-item-5" class="sticky-section">Contact Us Section</section> 
+{% endblock %}
